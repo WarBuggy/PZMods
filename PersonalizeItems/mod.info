@@ -1,0 +1,5 @@
+name=Personalize Items
+poster=poster.png
+id=BuggyPersonalizeItems
+versionMin=41.78
+description=Change display name of some items to be My "item display name" and their categories to be "AAA Items"

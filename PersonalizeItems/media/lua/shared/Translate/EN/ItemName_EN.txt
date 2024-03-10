@@ -1,0 +1,5 @@
+ItemName_EN = {
+    ItemName_Base.PersonalizeWhiskeyWaterFull = "My Water Bottle",
+    ItemName_Base.PersonalizeWhiskeyEmpty = "My Empty Bottle",
+    ItemName_Base.PersonalizeWhiskeyPetrol = "My Bottle of Gasoline",
+}

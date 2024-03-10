@@ -1,0 +1,22 @@
+module Base
+{
+    recipe SmashMarkedBottle
+    {
+        PersonalizeWhiskeyEmpty,
+
+        Result:SmashedBottle,
+        Time:20,
+        Sound:BreakGlassItem,
+    }
+
+    recipe MarkWaterBottleWithTape
+    {
+        WhiskeyEmpty,
+        keep Pen/RedPen/BluePen/Pencil/Crayons,
+        DuctTape=1/Scotchtape=2,
+        
+        Result:PersonalizeWhiskeyEmpty,
+        Time:40.0,
+        Sound:MapAddNote,
+    }
+}

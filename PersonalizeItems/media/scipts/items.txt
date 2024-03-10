@@ -1,0 +1,54 @@
+module Base
+{
+    item PersonalizeWhiskeyWaterFull
+	{
+		DisplayName = My Water Bottle,
+		DisplayCategory = PersonalizeItems,
+		Type = Drainable,
+		Weight = 0.7,
+		Icon = Whiskey_Water_Full,
+		CanStoreWater = TRUE,
+		EatType = Bourbon,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromTapSound = GetWaterFromTapGlass,
+		IsCookable = TRUE,
+		IsWaterSource = TRUE,
+		ReplaceOnDeplete = PersonalizeWhiskeyEmpty,
+		ReplaceOnUseOn = WaterSource-PersonalizeWhiskeyWaterFull,
+		UseDelta = 0.08,
+		UseWhileEquipped = FALSE,
+		CustomEatSound = DrinkingFromBottleGlass,
+		StaticModel = WhiskeyBottle,
+		WorldStaticModel = WhiskeyBottleGround,
+	}
+
+    item PersonalizeWhiskeyEmpty
+	{
+	    DisplayCategory = PersonalizeItems,
+		Weight	=	0.3,
+		CanStoreWater	=	TRUE,
+		Type	=	Normal,
+		DisplayName	=	My Empty Bottle,
+		ReplaceOnUseOn	=	WaterSource-PersonalizeWhiskeyWaterFull,
+		Icon	=	WhiskeyEmpty,
+		StaticModel = WhiskeyBottle,
+		WorldStaticModel = WhiskeyBottleGround,
+		Tags = EmptyPetrol,
+		ReplaceTypes = PetrolSource PersonalizeWhiskeyPetrol;WaterSource PersonalizeWhiskeyWaterFull,
+	}
+
+    item PersonalizeWhiskeyPetrol
+	{
+		DisplayCategory = PersonalizeItems,
+		Weight	=	0.7,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		UseDelta	=	1,
+		DisplayName	=	My Bottle of Gasoline,
+		Icon	=	WhiskeyBottleGas,
+		ReplaceOnDeplete	=	PersonalizeWhiskeyEmpty,
+		StaticModel = WhiskeyBottleGasoline,
+		WorldStaticModel = WhiskeyBottleGroundGasoline,
+		Tags = Petrol,
+	}	
+}
