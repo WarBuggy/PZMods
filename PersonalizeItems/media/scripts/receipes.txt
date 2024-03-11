@@ -1,19 +1,19 @@
-module Base
+module BuggyPersonalizeItems
 {
     recipe SmashMarkedBottle
     {
         PersonalizeWhiskeyEmpty,
 
-        Result:SmashedBottle,
+        Result:Base.SmashedBottle,
         Time:20,
         Sound:BreakGlassItem,
     }
 
     recipe MarkWaterBottleWithTape
     {
-        WhiskeyEmpty,
-        keep Pen/RedPen/BluePen/Pencil/Crayons,
-        DuctTape=1/Scotchtape=2,
+        Base.WhiskeyEmpty,
+        keep Base.Pen/Base.RedPen/Base.BluePen/Base.Pencil/Base.Crayons,
+        Base.DuctTape=1/Base.Scotchtape=2,
         
         Result:PersonalizeWhiskeyEmpty,
         Time:40.0,

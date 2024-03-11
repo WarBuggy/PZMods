@@ -1,5 +1,5 @@
 ItemName_EN = {
-    ItemName_Base.PersonalizeWhiskeyWaterFull = "My Water Bottle",
-    ItemName_Base.PersonalizeWhiskeyEmpty = "My Empty Bottle",
-    ItemName_Base.PersonalizeWhiskeyPetrol = "My Bottle of Gasoline",
+    ItemName_BuggyPersonalizeItems.PersonalizeWhiskeyWaterFull = "My Water Bottle",
+    ItemName_BuggyPersonalizeItems.PersonalizeWhiskeyEmpty = "My Empty Bottle",
+    ItemName_BuggyPersonalizeItems.PersonalizeWhiskeyPetrol = "My Bottle of Gasoline",
 }

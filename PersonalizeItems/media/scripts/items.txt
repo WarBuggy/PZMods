@@ -1,5 +1,9 @@
-module Base
+module BuggyPersonalizeItems
 {
+	imports {
+        Base
+    }
+
     item PersonalizeWhiskeyWaterFull
 	{
 		DisplayName = My Water Bottle,
